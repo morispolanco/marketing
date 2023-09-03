@@ -47,7 +47,7 @@ if st.button("Generar Mensaje"):
         prompt = f"Escribe un mensaje {tono.lower()} para promocionar {producto} en {plataforma}: {mensaje_deseado}"
 
         respuesta = openai.Completion.create(
-            engine="chatgpt-3.5",
+            engine="gpt-4",
             prompt=prompt,
             max_tokens=max_tokens,
             n=1
