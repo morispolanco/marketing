@@ -39,15 +39,15 @@ if st.button("Generar Mensaje"):
         elif plataforma == "Instagram":
             max_tokens = 2200
         elif plataforma == "Post para Blog":
-            max_tokens = 10000  # Puedes ajustar este límite según tus necesidades para blogs.
+            max_tokens = 4500  # Puedes ajustar este límite según tus necesidades para blogs.
         elif plataforma == "Email":
-            max_tokens = 5000  # Puedes ajustar este límite según tus necesidades para correos electrónicos.
+            max_tokens = 4000  # Puedes ajustar este límite según tus necesidades para correos electrónicos.
 
         # Construir el prompt con el tono y el mensaje deseado
         prompt = f"Escribe un mensaje {tono.lower()} para promocionar {producto} en {plataforma}: {mensaje_deseado}"
 
         respuesta = openai.Completion.create(
-            engine="text-davinci-002",
+            engine="text-davinci-003",
             prompt=prompt,
             max_tokens=max_tokens,
             n=1
