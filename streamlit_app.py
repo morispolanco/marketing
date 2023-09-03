@@ -47,7 +47,7 @@ if st.button("Generar Mensaje"):
         prompt = f"Escribe un mensaje {tono.lower()} para promocionar {producto} en {plataforma}: {mensaje_deseado}"
 
         respuesta = openai.Completion.create(
-            engine="text-davinci-003",
+            engine="chatgpt-3.5",
             prompt=prompt,
             max_tokens=max_tokens,
             n=1
@@ -60,4 +60,4 @@ if st.button("Generar Mensaje"):
 
 # Información adicional
 st.sidebar.header("Información Adicional")
-st.sidebar.markdown("Esta aplicación utiliza GPT-3 de OpenAI para generar mensajes de promoción. Asegúrate de seguir las políticas de uso de OpenAI.")
+st.sidebar.markdown("Esta aplicación utiliza ChatGPT-3.5 Turbo de OpenAI para generar mensajes de promoción. Asegúrate de seguir las políticas de uso de OpenAI.")
