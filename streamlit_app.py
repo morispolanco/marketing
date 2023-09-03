@@ -35,11 +35,11 @@ if st.button("Generar Mensaje"):
         if plataforma == "Twitter":
             max_tokens = 280
         elif plataforma == "Facebook":
-            max_tokens = 4500
+            max_tokens = 4000
         elif plataforma == "Instagram":
             max_tokens = 2200
         elif plataforma == "Post para Blog":
-            max_tokens = 4500  # Puedes ajustar este límite según tus necesidades para blogs.
+            max_tokens = 4000  # Puedes ajustar este límite según tus necesidades para blogs.
         elif plataforma == "Email":
             max_tokens = 4000  # Puedes ajustar este límite según tus necesidades para correos electrónicos.
 
